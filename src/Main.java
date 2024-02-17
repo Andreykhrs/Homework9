@@ -18,8 +18,8 @@ public class Main {
         System.out.println("Задача №1");
         int[] arr = generateRandomArray();
         int totalSum = 0;
-        for (int j : arr) {
-            totalSum = totalSum + j;
+        for (int money : arr) {
+            totalSum = totalSum + money;
 
         }
         System.out.println("Сумма трат за месяц составила " + totalSum + " рублей.");
@@ -29,7 +29,7 @@ public class Main {
         System.out.println("Задача №2");
         arr = generateRandomArray();
         int maxSum = -1;
-        int minSum = 0;
+        int minSum;
         for (int i = 0; i < arr.length; i++) {
             if (maxSum < arr[i]) {
                 maxSum = arr[i];
